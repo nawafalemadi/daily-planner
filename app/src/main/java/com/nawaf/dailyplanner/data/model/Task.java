@@ -14,10 +14,8 @@ public class Task {
 
     private long dueAtMillis;
 
-    // 0=LOW, 1=MEDIUM, 2=HIGH, 3=URGENT
     private int priority;
 
-    // 0=TODO, 1=IN_PROGRESS, 2=DONE
     private int status;
 
     private long createdAtMillis;
