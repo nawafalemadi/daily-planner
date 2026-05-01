@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">DailyPlanner</string>
+    <string name="daily_planner">Daily Planner</string>
+    <string name="add_task">Add Task</string>
+    <string name="statistics">Statistics</string>
+    <string name="sort_tasks">Sort Tasks</string>
+    <string name="no_tasks_yet">No tasks yet\nTap Add Task to start planning your day</string>
+
+    <string name="delete_task">Delete Task</string>
+    <string name="delete_task_message">Are you sure you want to delete this task?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="sort_by_due_date">Sort by Due Date</string>
+    <string name="sort_by_priority">Sort by Priority</string>
+    <string name="sort_by_newest">Sort by Newest</string>
+
+    <string name="priority_low">Low</string>
+    <string name="priority_medium">Medium</string>
+    <string name="priority_high">High</string>
+    <string name="priority_urgent">Urgent</string>
+
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="close">Close</string>
+    <string name="edit_task">Edit Task</string>
+    <string name="update">Update</string>
+
+    <string name="please_enter_task_title">Please enter a task title</string>
+    <string name="task_added">Task added!</string>
+    <string name="task_updated">Task updated!</string>
+
+    <string name="priority_format">Priority: %1$s</string>
+    <string name="due_date_format">Due date: %1$s</string>
+    <string name="status_format">Status: %1$s</string>
+    <string name="status_completed">Completed</string>
+    <string name="status_not_completed">Not completed</string>
+
+    <string name="selected_format">Selected: %1$s</string>
+
+    <string name="task_statistics">Task Statistics</string>
+    <string name="overall_progress">Overall Progress</string>
+    <string name="task_breakdown">Task Breakdown</string>
+    <string name="back_to_tasks">Back to Tasks</string>
+
+    <string name="completed_format">%1$d%% completed</string>
+    <string name="tasks_completed_summary">%1$d of %2$d tasks completed</string>
+    <string name="total_tasks_format">Total Tasks: %1$d</string>
+    <string name="completed_tasks_format">Completed: %1$d</string>
+    <string name="pending_tasks_format">Pending: %1$d</string>
+    <string name="overdue_tasks_format">Overdue: %1$d</string>
+
+    <string name="task_information">Task Information</string>
+    <string name="task_title_label">Task Title</string>
+    <string name="enter_task_title">Enter task title</string>
+    <string name="priority_label">Priority</string>
+    <string name="deadline_label">Deadline</string>
+    <string name="pick_date">Pick Date</string>
+    <string name="pick_time">Pick Time</string>
+    <string name="no_date_time_selected">No date/time selected</string>
+
+    <string name="task_details">Task Details</string>
+    <string name="title_label">Title</string>
+    <string name="due_date_label">Due Date</string>
+    <string name="status_label">Status</string>
+
+    <string name="logo_description">App Logo</string>
+    <string name="overdue">Overdue</string>
+    <string name="due_format">Due: %1$s</string>
+    <string name="due_overdue_format">Due: %1$s (%2$s)</string>
+
+    <string name="guide">Guide</string>
+    <string name="guide_message">1. Tap a task to view details.\n\n2. Long press a task to delete it.\n\n3. Use the checkbox to mark tasks as completed.\n\n4. Use the sort menu to organize tasks.</string>
+</resources>

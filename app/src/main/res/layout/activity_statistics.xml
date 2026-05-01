@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvStatisticsTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="@string/task_statistics"
+            android:textColor="@color/text_primary"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardBackgroundColor="@color/card_bg"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="4dp"
+            app:strokeColor="@color/soft_border"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="18dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/overall_progress"
+                    android:textColor="@color/text_primary"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvCompletionRate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/completed_format"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="15sp"
+                    tools:text="0% completed"
+                    />
+
+                <ProgressBar
+                    android:id="@+id/progressOverall"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="14dp"
+                    android:layout_marginTop="14dp"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressTint="@color/purple_500" />
+
+                <TextView
+                    android:id="@+id/tvSummary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/tasks_completed_summary"
+                    android:textColor="@color/text_primary"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:text="0 of 0 tasks completed" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardBackgroundColor="@color/card_bg"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="4dp"
+            app:strokeColor="@color/soft_border"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="18dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:text="@string/task_breakdown"
+                    android:textColor="@color/text_primary"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="14dp"
+                    android:text="@string/total_tasks_format"
+                    android:textColor="@color/text_primary"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:text="Total Tasks: 0" />
+
+                <TextView
+                    android:id="@+id/tvCompleted"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/completed_tasks_format"
+                    android:textColor="@color/green_low"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:text="Completed: 0" />
+
+                <ProgressBar
+                    android:id="@+id/progressCompleted"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="14dp"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressTint="@color/green_low" />
+
+                <TextView
+                    android:id="@+id/tvPending"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pending_tasks_format"
+                    android:textColor="@color/blue_medium"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:text="Pending: 0" />
+
+                <ProgressBar
+                    android:id="@+id/progressPending"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="14dp"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressTint="@color/blue_medium" />
+
+                <TextView
+                    android:id="@+id/tvOverdue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/overdue_tasks_format"
+                    android:textColor="@color/red_urgent"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:text="Overdue: 0" />
+
+                <ProgressBar
+                    android:id="@+id/progressOverdue"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_marginTop="6dp"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressTint="@color/red_urgent" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="@color/purple_700"
+            android:text="@string/back_to_tasks"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_500">#5B4BDB</color>
+    <color name="purple_700">#4338CA</color>
+
+    <color name="app_background">#F7F7FB</color>
+    <color name="card_bg">#FFFFFF</color>
+
+    <color name="text_primary">#1F2937</color>
+    <color name="text_secondary">#4B5563</color>
+    <color name="soft_border">#D1D5DB</color>
+
+    <color name="green_low">#2E7D32</color>
+    <color name="blue_medium">#1565C0</color>
+    <color name="orange_high">#B45309</color>
+    <color name="red_urgent">#B91C1C</color>
+</resources>
